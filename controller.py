@@ -17,11 +17,11 @@ def run():
             case '1':
                 note_operations.add_note()
             case '2':
-                pass
+                note_operations.show_notes('all')
             case '3':
                 pass
             case '4':
-                pass
+                note_operations.show_notes('date')
             case '5':
                 pass
             case '6':
