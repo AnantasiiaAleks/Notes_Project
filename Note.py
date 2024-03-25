@@ -1,10 +1,10 @@
 import uuid
 from datetime import datetime
 
-
+NOW = datetime.now()
 class Note:
     def __init__(self, note_id=str(uuid.uuid4().int)[:4],
-                 date=f'{datetime.now:%d.%m.%Y %H:%M:%S}',
+                 date=f'{NOW:%d.%m.%Y %H:%M:%S}',
                  title='title',
                  text='text'):
         self.note_id = note_id
@@ -28,7 +28,7 @@ class Note:
         self.note_id = str(uuid.uuid4().int)[:4]
 
     def set_date(self):
-        self.date = f'{datetime.now:%d.%m.%Y %H:%M:%S}'
+        self.date = f'{NOW:%d.%m.%Y %H:%M:%S}'
 
     def set_title(self, title):
         self.title = title
