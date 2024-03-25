@@ -19,12 +19,12 @@ def run():
             case '2':
                 note_operations.show_notes('all')
             case '3':
-                pass
+                note_operations.id_functions('show')
             case '4':
                 note_operations.show_notes('date')
             case '5':
-                pass
+                note_operations.id_functions('edit')
             case '6':
-                pass
+                note_operations.id_functions('del')
             case '7':
                 ui.say_goodbye()
