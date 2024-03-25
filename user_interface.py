@@ -3,7 +3,7 @@ import Note
 MIN_LEN_TEXT = 5
 
 
-def menu():
+def print_menu():
     print('_' * 10 + 'Menu' + '_' * 10)
     print('Press 1-7 to select any command:\n'
           '1. Create new note\n'
