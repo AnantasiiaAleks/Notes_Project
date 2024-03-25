@@ -1,10 +1,14 @@
 import Note
 
 
-def write_file(array):
-    with open('notes.csv', 'a', encoding='UTF-8', newline='') as file:
+def write_file(array, mode):
+    file = open("notes.csv", mode='w', encoding='utf-8')
+    file.seek(0)
+    file.close()
+    with open('notes.csv', mode=mode, encoding='UTF-8') as file:
         for notes in array:
             file.write(Note.Note.to_string(notes))
+            file.write('\n')
 
 
 def read_file():

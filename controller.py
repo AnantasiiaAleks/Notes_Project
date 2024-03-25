@@ -1,9 +1,8 @@
 import user_interface as ui
+import note_operations
 
 
 def run():
-    # with open('notes.csv', 'a', encoding='UTF-8'):
-    #     pass
     command = '-1'
     while command != '7':
         ui.print_menu()
@@ -16,7 +15,7 @@ def run():
 
         match command:
             case '1':
-                pass
+                note_operations.add_note()
             case '2':
                 pass
             case '3':
